@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css import -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css"><!-- datatable -->
+    <!-- css import end -->
+    <!-- js import -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js">//jquery for datatable</script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js">//datatable js</script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js">//datatable bootstrap js</script>
+    <!-- js import end -->
+
+    <!-- mais informações do datatable https://datatables.net/examples/styling/bootstrap5.html -->
+    <title>Menu</title>
+</head>
+
+<body>
+    <header class="d-flex align-items-center px-4">
+        <span class="text-light">
+            <i class="bi bi-person-fill"></i>
+            Gabriela da Silva Pereira
+        </span>
+    </header>
+    <aside>
+        <!-- header and aside spacing -->
+        <div class="header-space d-flex justify-content-center align-items-center">
+            <span class="text-light">CADASTRO</span>
+        </div>
+        <div class="aside-space"></div>
+        <!-- header and aside spacing end -->
+
+        <div id="aside-menu">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Consulta
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body p-0">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action">Usuários</a>
+                                <a href="#" class="list-group-item list-group-item-action">Produtos</a>
+                                <a href="#" class="list-group-item list-group-item-action">Setores</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Cadastro
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body p-0">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action">Inventário</a>
+                                <a href="#" class="list-group-item list-group-item-action">Usuários</a>
+                                <a href="#" class="list-group-item list-group-item-action">Produtos</a>
+                                <a href="#" class="list-group-item list-group-item-action">Setores</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Configurar
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body p-0">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action">Meu perfil</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Colaborador</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Função</th>
+                    <th>Setor</th>
+                    <th>Superior imediato</th>
+                    <th>Desktop/Note</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Fernando Rodrigues</td>
+                    <td>(15) 98811-9308</td>
+                    <td>fernando_tecti@hotmail.com</td>
+                    <td>Dev WEB</td>
+                    <td>Desenvolvimento</td>
+                    <td>Joaquim da Silva</td>
+                    <td>Ryzen 7 3700X</td>
+                    <td><a href="#"><i class="bi bi-pencil"></i></a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Fernando Rodrigues</td>
+                    <td>(15) 98811-9308</td>
+                    <td>fernando_tecti@hotmail.com</td>
+                    <td>Dev WEB</td>
+                    <td>Desenvolvimento</td>
+                    <td>Joaquim da Silva</td>
+                    <td>Ryzen 7 3700X</td>
+                    <td><a href="#"><i class="bi bi-pencil"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <!-- <footer>
+        |...|
+    </footer> -->
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+</script>
